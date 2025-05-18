@@ -1,2 +1,0 @@
-Username: Admin1
-Password: 123456
