@@ -1,0 +1,143 @@
+:root {
+    /* Light Mode Defaults */
+    --bg-color: #E60012;
+    --text-color: #f0f0f0;
+    --primary-color: #E60012; /* Nintendo Red */
+    --form-bg: #f4f4f4;
+    --input-bg: #ffffff;
+    --input-border: #ddd;
+    --table-bg: #ffffff;
+    --table-hover: #f9f9f9;
+    --th-bg: #E60012;
+    --th-text: #ffffff;
+    --td-text: #333333;
+  }
+  
+  [data-theme="dark"] {
+    /* Dark Mode Overrides */
+    --bg-color: #121212;
+    --text-color: #f0f0f0;
+    --primary-color: #221d1d;
+    --form-bg: #1e1e1e;
+    --input-bg: #2d2d2d;
+    --input-border: #444;
+    --table-bg: #252525;
+    --table-hover: #333;
+    --th-bg: #221d1d;
+    --th-text: #f0f0f0;
+    --td-text: #e0e0e0;
+  }
+  
+  /* Body and General Styles */
+  body { 
+    font-family: "Lexend", serif; 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    background-color: var(--primary-color);
+}
+
+/* Form Labels */
+label { 
+    display: block; 
+    margin-top: 10px; 
+    font-size: 16px;
+    color: var(--text-color);
+}
+
+/* Input and Textarea Styling */
+input, textarea { 
+    width: 100%; 
+    padding: 10px; 
+    margin-top: 5px; 
+    border: 1px solid var(--input-border); 
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-family: "Lexend", serif;
+}
+
+/* Preview Image Styling */
+.preview-image {
+    max-width: 300px;
+    margin: 10px 0;
+    display: none;
+    border-radius: 5px;
+}
+
+/* Image Options Styling */
+.image-options {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.image-options label {
+    margin: 0;
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+td {
+    color: #333;
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Form Container Styling */
+.game-form {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+  
+  /* Theme Toggle Button */
+  #theme-toggle {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 8px 12px;
+      background: var(--primary-color);
+      color: white;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      z-index: 1000;
+  }
